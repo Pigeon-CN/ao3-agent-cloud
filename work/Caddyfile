@@ -1,0 +1,12 @@
+:80 {
+    reverse_proxy /*  {
+        to https://archiveofourown.org:443
+        header_up Host "archiveofourown.org"
+        header_up Accept-Encoding ""
+        transport http {
+            tls_server_name archiveofourown.org
+            compression off
+        }
+        
+    }
+}
