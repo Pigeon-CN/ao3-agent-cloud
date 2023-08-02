@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  ao3-proxy:
+    image: ghcr.io/akibaso/ao3-proxy-cloud:latest
+    ports:
+      - 80:80
